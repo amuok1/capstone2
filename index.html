@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Great Outdoors Explorer</title>
+  <style>
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: "Brush Script MT", cursive;
+  filter: brightness(80%) contrast(120%);
+}
+
+.background-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url('images/rainforest.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.content-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  
+}
+header {
+    background-color: transparent;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+}
+
+main {
+  padding: 40px;
+  text-align: center;
+}
+
+.hero-section {
+  margin-bottom: 40px;
+}
+
+.logo {
+  font-size: 48px;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 36px;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.about-section {
+  background-color: #d2e7f5;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+  </style>
+</head>
+<body>
+  <div class="background-container">
+    <div class="content-container">
+      <header>
+        <nav>
+          <ul>
+            <li><a href="nationalParks.html">National Parks</a></li>
+            <li><a href="mountain.html">Mountains</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+      <main>
+        <section class="hero-section">
+          <h1 class="logo">Great Outdoors Explorer</h1>
+          <h2>Discover the Wonders of Nature</h2>
+        </section> 
+      </main>
+    </div>
+  </div>
+</body>
+</html>
