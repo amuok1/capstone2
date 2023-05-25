@@ -1,34 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Mountain Search</title>
-  <style>
-    .background-container {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  background-image: url('images/mountain.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.content-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mountains Information Page</title>
+<style>
+    body {
+    font-family: "Aharoni", sans-serif;
+  background-color: rgb(97, 97, 97);
+  filter: brightness(120%) contrast(120%);
   
-  
-}
-
-
-body {
-    font-family: "Brush Script MT", cursive;
-  background-color: darkgrey;
-  filter: brightness(160%) contrast(120%);
 }
 
 h1 {
@@ -59,49 +40,31 @@ nav li a {
   font-size: 18px;
 }
 
-#searchForm {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-#searchInput {
-  padding: 10px;
-  font-size: 16px;
-}
-
-#searchResults {
-  margin: 20px auto;
-  width: 80%;
-  max-width: 600px;
-}
-
-
-  </style>
-  <script src="mountain.js"></script>
-  <script src="script.js"></script>
+</style>
 </head>
 <body>
-    <div class="background-container">
-        <div class="content-container">
+  
+  
+
     <header>
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="nationalParks.html">National Parks</a></li>
-            <li><a href="mountain.html">Mountains</a></li>
+            
           </ul>
         </nav>
       </header>
-  <h1>Mountain Search</h1>
+  <h1>Mountains Information Page</h1>
 
-  <form id="searchForm">
-    <select id="searchDropdown">
-      <option value="">Select a mountain...</option>
-    </select>
-    <button type="submit">Search</button>
-  </form>
-  <div id="searchResults"></div>
-  </div>
-  </div>
+  <label for="mountainSelect">Select a Mountain:</label>
+  <select id="mountainSelect"></select>
+
+  <button id="searchBtn">Search</button>
+
+  <div id="mountainInfo"></div>
+
+  <script src="mountain.js"></script>
+  
 </body>
 </html>
